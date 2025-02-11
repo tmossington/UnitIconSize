@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="my_unit_icon_size_mod" version="1" xmlns="ModInfo">
+    <Properties>
+        <Name>Racington's Unit Icon Size Mod</Name>
+        <Description>Increases the size of unit icons.</Description>
+        <Authors>Racington</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+    </Dependencies>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet></AlwaysMet>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="game-my-unit-icon-size-always" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>100</LoadOrder>
+            </Properties>
+            <Actions>
+                <ImportFiles>
+                    <Item>ui/unit-flags/unit-flags.js</Item>
+                </ImportFiles>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+</Mod>
