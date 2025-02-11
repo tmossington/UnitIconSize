@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="my_unit_icon_size_mod" version="1" xmlns="ModInfo">
+<Mod id="unit_icon_size_mod" version="1" xmlns="ModInfo">
     <Properties>
         <Name>Racington's Unit Icon Size Mod</Name>
         <Description>Increases the size of unit icons.</Description>
@@ -16,13 +16,14 @@
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
-        <ActionGroup id="game-my-unit-icon-size-always" scope="game" criteria="always">
+        <ActionGroup id="game-unit-icon-size-always" scope="game" criteria="always">
             <Properties>
                 <LoadOrder>100</LoadOrder>
             </Properties>
             <Actions>
                 <ImportFiles>
                     <Item>ui/unit-flags/unit-flags.js</Item>
+                    <Item>ui/unit-flags/unit-flags.css</Item>
                 </ImportFiles>
             </Actions>
         </ActionGroup>
