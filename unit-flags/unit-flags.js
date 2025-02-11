@@ -67,7 +67,7 @@ export class GenericUnitFlag extends Component {
             playerColorSec = UI.Player.getSecondaryColorValueAsString(this.componentID.owner);
         }
         const unitFlagContainer = document.createElement('div');
-        unitFlagContainer.classList.add('unit-flag__container', 'absolute', '-top-6', '-left-6', 'pointer-events-auto', 'flex', 'flex-col', 'justify-center', 'items-center', 'w-12', 'h-12');
+        unitFlagContainer.classList.add('unit-flag__container', 'absolute', '-top-6', '-left-6', 'pointer-events-auto', 'flex', 'flex-col', 'justify-center', 'items-center', 'w-16', 'h-16');
         this.unitContainer = unitFlagContainer;
         const unitFlagShadow = document.createElement('div');
         unitFlagShadow.classList.add('unit-flag__shadow', 'pointer-events-none', 'absolute', 'inset-0', 'bg-cover');
