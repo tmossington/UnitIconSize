@@ -24,6 +24,8 @@
                 <ImportFiles>
                     <Item>ui/unit-flags/unit-flags.js</Item>
                     <Item>ui/unit-flags/unit-flags.css</Item>
+                    <Item>ui\unit-flags\unit-flags-independent-powers.js</Item>
+                    <Item>ui\unit-flags\army-commander-flags.js</Item>
                 </ImportFiles>
             </Actions>
         </ActionGroup>
