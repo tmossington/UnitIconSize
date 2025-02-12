@@ -105,15 +105,17 @@ export class GenericUnitFlag extends Component {
         unitFlagPromotionNumber.classList.add('unit-flag__promotion-number', 'font-body', 'text-2xs', 'absolute', 'text-center');
         unitFlagPromotionNumber.style.color = playerColorSec;
         unitFlagContainer.appendChild(unitFlagPromotionNumber);
+
         const unitFlagTierGraphic = document.createElement('div');
         unitFlagTierGraphic.classList.add('unit-flag__tier-graphic', 'absolute', 'bg-cover', 'bg-no-repeat');
-
+        
         // Adjust the styles directly in the JavaScript code
         unitFlagTierGraphic.style.width = '1.3333333333rem'; // Adjusted from 1rem
         unitFlagTierGraphic.style.height = '1.3333333333rem'; // Adjusted from 1rem
-        unitFlagTierGraphic.style.top = '1.8rem'; // Adjusted to move down
-        unitFlagTierGraphic.style.left = '1.1rem'; // Adjusted to move left
-
+        unitFlagTierGraphic.style.left = '50%'; // Center horizontally
+        unitFlagTierGraphic.style.transform = 'translate(-50%, 50%)'; // Center horizontally
+        unitFlagTierGraphic.style.bottom = '0'; // Position at the bottom
+        
         const unit = Units.get(this.componentID);
         if (unit) {
             const unitDefinition = GameInfo.Units.lookup(unit.type);
