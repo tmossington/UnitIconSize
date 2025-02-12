@@ -106,7 +106,14 @@ export class GenericUnitFlag extends Component {
         unitFlagPromotionNumber.style.color = playerColorSec;
         unitFlagContainer.appendChild(unitFlagPromotionNumber);
         const unitFlagTierGraphic = document.createElement('div');
-        unitFlagTierGraphic.classList.add('unit-flag__tier-graphic', 'absolute', 'w-4', 'h-4', 'left-4', 'right-0', 'bottom-0', 'bg-cover', 'bg-no-repeat');
+        unitFlagTierGraphic.classList.add('unit-flag__tier-graphic', 'absolute', 'bg-cover', 'bg-no-repeat');
+
+        // Adjust the styles directly in the JavaScript code
+        unitFlagTierGraphic.style.width = '1.3333333333rem'; // Adjusted from 1rem
+        unitFlagTierGraphic.style.height = '1.3333333333rem'; // Adjusted from 1rem
+        unitFlagTierGraphic.style.top = '1.8rem'; // Adjusted to move down
+        unitFlagTierGraphic.style.left = '1.1rem'; // Adjusted to move left
+
         const unit = Units.get(this.componentID);
         if (unit) {
             const unitDefinition = GameInfo.Units.lookup(unit.type);
