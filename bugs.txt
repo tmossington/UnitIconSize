@@ -1,0 +1,3 @@
+Possible bug where other Civ's units has red barrier around unit flag normally used by hostile independent powers.
+
+Possible bug where city banner disappears temporarily.
