@@ -306,10 +306,7 @@ export class GenericUnitFlag extends Component {
         }
         const numPromotions = this.unit.Experience?.getLevel;
         if (numPromotions && numPromotions > 0) {
-            const promotionNumber = document.createElement("div");
-            promotionNumber.classList.add("w-4", "h-4");
-            promotionNumber.innerHTML = numPromotions.toString();
-            promotionContainer.appendChild(promotionNumber);
+            // skip adding promotion number element
             this.Root.classList.add("unit-flag--has-promotions");
         }
     }
